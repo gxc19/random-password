@@ -1,0 +1,82 @@
+.btnBox{
+    width: 450px;
+}
+
+.optBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #21374A;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 0 20px;
+    box-shadow: inset 3px 3px 3px #131e29, 
+    inset -3px -3px 3px #274057;
+  }
+  
+  .btn{
+    display: flex;
+    align-items: center;
+    height: 24px;
+    width: 50px;
+    border-radius: 50px;
+    position: relative;
+  }
+
+  .btnTop, .btnTop2, .btnTop3, .btnTop4{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #122333;
+    border-radius: 50%;
+    transition: all .3s ease;
+    transform: translateX(26px);
+    
+  }
+
+  .none{
+    height: 24px;
+    width: 50px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: #2EAC68;
+    transition: all .4s ease;
+  }
+  
+  .btn-base{
+    height: 24px;
+    width: 50px;
+    background-color: #182B3C;
+    border-radius: 50px;
+    transition: all .4s ease;
+  }
+  
+  .btnTop.off{
+    transition: all .3s ease;
+    transform: translateX(4px);
+  }
+  
+  .btnTop2.off{
+    transition: all .3s ease;
+    transform: translateX(4px);
+  }
+  .btnTop3.off{
+    transition: all .3s ease;
+    transform: translateX(4px);
+  }
+  .btnTop4.off{
+    transition: all .3s ease;
+    transform: translateX(4px);
+  }
+
+
+@media only screen and (max-width: 600px){
+  .btnBox{
+    width: 300px;
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+}
